@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="839.0" style="-fx-background-color: fffffff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pijava.Terrain.StatController">
+   <children>
+      <BarChart fx:id="chart" layoutX="28.0" layoutY="14.0" prefHeight="411.0" prefWidth="748.0" title="Meilleurs Terrains">
+        <xAxis>
+          <CategoryAxis label="Nom Terrain" side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" label="nbre de fois " side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="btn" layoutX="626.0" layoutY="425.0" mnemonicParsing="false" onAction="#Retour" prefHeight="25.0" prefWidth="106.0" text="Retour" />
+      <Button fx:id="btn1" layoutX="498.0" layoutY="425.0" mnemonicParsing="false" onAction="#afficherchart" prefHeight="25.0" prefWidth="106.0" text="Afficher" />
+   </children>
+</AnchorPane>

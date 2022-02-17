@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="793.0" prefWidth="706.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="pijava.Login.MonCompteController">
+   <children>
+      <AnchorPane prefHeight="75.0" prefWidth="706.0" style="-fx-background-color: #63a50a #63a50a;">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="353.0" style="-fx-background-color: #90ee90;" text="Mon Profil" />
+            <Button layoutX="353.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="353.0" text="Compte" />
+         </children>
+      </AnchorPane>
+      <Button mnemonicParsing="false" onAction="#ProfilButtonOnAction" prefHeight="75.0" prefWidth="353.0" text="Mon Profil" />
+      <Button layoutX="353.0" mnemonicParsing="false" onAction="#CompteButtonOnAction" prefHeight="75.0" prefWidth="353.0" style="-fx-background-color: #90ee90;" text="Compte" />
+      <Label layoutX="150.0" layoutY="185.0" text="Nom d'utilisateur" />
+      <Label layoutX="150.0" layoutY="268.0" prefHeight="21.0" prefWidth="124.0" text="Adresse Email" />
+      <Button fx:id="SaveButton" layoutX="477.0" layoutY="730.0" mnemonicParsing="false" onAction="#SaveButtonOnAction" text="Enregistrer" />
+      <Label fx:id="IdLabel" layoutX="580.0" layoutY="136.0" prefHeight="21.0" prefWidth="62.0" visible="false" />
+      <Label layoutX="150.0" layoutY="359.0" text="Nom réel" />
+      <TextField fx:id="tfNom" layoutX="364.0" layoutY="354.0" prefHeight="31.0" prefWidth="217.0" promptText="Nom" />
+      <Button layoutX="587.0" layoutY="730.0" mnemonicParsing="false" onAction="#CloseButtonOnAction" prefHeight="31.0" prefWidth="92.0" text="Fermer" />
+      <Label layoutX="150.0" layoutY="445.0" text="Numero de téléphone" />
+      <TextField fx:id="tfNum" layoutX="364.0" layoutY="440.0" prefHeight="31.0" prefWidth="217.0" promptText="Age" />
+      <TextField fx:id="tfUser" layoutX="364.0" layoutY="180.0" prefHeight="31.0" prefWidth="217.0" />
+      <Label fx:id="PwLabel" layoutX="150.0" layoutY="574.0" text="Changer de mot de passe?" underline="true" />
+      <Label fx:id="MailLabel" layoutX="362.0" layoutY="258.0" prefHeight="41.0" prefWidth="230.0" />
+   </children>
+</AnchorPane>

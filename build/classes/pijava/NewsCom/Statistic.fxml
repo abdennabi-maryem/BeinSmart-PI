@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="551.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pijava.NewsCom.StatisticController">
+   <children>
+      <BarChart fx:id="chart" layoutX="99.0" layoutY="102.0" title="Statistiques">
+        <xAxis>
+          <CategoryAxis label="Type de sport" side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" label="reacts" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <JFXButton fx:id="load" layoutX="73.0" layoutY="56.0" onAction="#loadChart" text="LOAD" />
+      <JFXButton layoutX="167.0" layoutY="56.0" onAction="#Retour" text="RETOUR" />
+   </children>
+</AnchorPane>

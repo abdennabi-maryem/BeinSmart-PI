@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="1308.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pijava.AdminInterface.AdminInterfaceController">
+   <children>
+      <AnchorPane prefHeight="844.0" prefWidth="284.0" style="-fx-background-color: #90ee90;">
+         <children>
+            <AnchorPane layoutY="-7.0" prefHeight="79.0" prefWidth="284.0">
+               <children>
+                  <Button layoutX="14.0" mnemonicParsing="false" onAction="#DashboardOnAction" prefHeight="109.0" prefWidth="246.0" style="-fx-background-color: #90ee90;" text="ESPACE ADMIN" textFill="#347f2a">
+                     <font>
+                        <Font name="System Bold Italic" size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button alignment="BASELINE_LEFT" layoutY="122.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="284.0" style="-fx-background-color: #90ee90;" text="Matchs" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="MatchIMG" fitHeight="34.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/AccueilIcon/MatchTXT.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+              
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="200.0" mnemonicParsing="false" onAction="#UserControlOnAction" prefHeight="67.0" prefWidth="284.0" style="-fx-background-color: #90ee90;" text="Utilisateurs" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="UserIMG" fitHeight="37.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/AccueilIcon/UserIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+              
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="274.0" mnemonicParsing="false" onAction="#NewsControlOnAction" prefHeight="67.0" prefWidth="284.0" style="-fx-background-color: #90ee90;" text="News" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="NewsIMG" fitHeight="68.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/AccueilIcon/NewsTXT.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+              
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="1.0" layoutY="348.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="284.0" style="-fx-background-color: #90ee90;" text="Évènements" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="EventIMG" fitHeight="37.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/AccueilIcon/EventTXT.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="1.0" layoutY="424.0" mnemonicParsing="false" onAction="#RecControlOnAction" prefHeight="67.0" prefWidth="286.0" style="-fx-background-color: #90ee90;" text="Réclamations" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="RecIMG" fitHeight="37.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/AccueilIcon/RecTXT.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+             
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="1.0" layoutY="498.0" mnemonicParsing="false" onAction="#TerrControlOnAction" prefHeight="67.0" prefWidth="285.0" style="-fx-background-color: #90ee90;" text="Terrains" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="TerrainIMG" fitHeight="31.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/Terrain.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+              
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="1.0" layoutY="575.0" mnemonicParsing="false" onAction="#CoachControlOnAction" prefHeight="67.0" prefWidth="284.0" style="-fx-background-color: #90ee90;" text="Coachs" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="CoachIMG" fitHeight="68.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/AccueilIcon/CoachIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="1.0" layoutY="651.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="284.0" style="-fx-background-color: #90ee90;" text="Arbitre" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="ArbitreIMG" fitHeight="56.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/AccueilIcon/ArbitreIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="728.0" mnemonicParsing="false" prefHeight="116.0" prefWidth="284.0" style="-fx-background-color: #90ee90;" text="Salle de sport/Equipements" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fx:id="GymIMG" fitHeight="49.0" fitWidth="45.0" layoutX="14.0" layoutY="728.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/AccueilIcon/GymIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="532.0" layoutY="274.0" mnemonicParsing="false" onAction="#BackHomeOnAction" prefHeight="158.0" prefWidth="474.0" style="-fx-background-color: #90ee90;" text="Retour à l'accueil" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="RetourIMG" fitHeight="59.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/AccueilIcon/Go-back-icon.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="532.0" layoutY="433.0" mnemonicParsing="false" onAction="#LogOutOnAction" prefHeight="158.0" prefWidth="474.0" style="-fx-background-color: #90ee90;" text="Deconnexion" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="DecoIMG" fitHeight="41.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/AccueilIcon/deconnexion.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fx:id="ProfilIMG" fitHeight="49.0" fitWidth="56.0" layoutX="1237.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../wamp64/www/PiJava/UserIcon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="UsernameADMIN" alignment="CENTER_RIGHT" layoutX="1092.0" layoutY="132.0" prefHeight="39.0" prefWidth="137.0" style="-fx-font-weight: bolder;" text="ADMIN" textFill="#347f2a">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="710.0" layoutY="27.0" prefHeight="50.0" prefWidth="224.0" text="DASHBOARD" textFill="#347f2a">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

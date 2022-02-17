@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="847.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pijava.Inscription.InscriptionController">
+   <children>
+      <AnchorPane prefHeight="111.0" prefWidth="703.0" style="-fx-background-color: #63a50a;">
+         <children>
+            <ImageView fx:id="LogoImageView" fitHeight="111.0" fitWidth="149.0" layoutX="59.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="211.0" layoutY="38.0" prefHeight="37.0" prefWidth="184.0" text="Inscription">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="120.0" layoutY="286.0" text="Nom d'utilisateur" />
+      <Label layoutX="121.0" layoutY="429.0" text="Mot de passe" />
+      <Label layoutX="120.0" layoutY="357.0" text="Adresse Email" />
+      <TextField fx:id="tfUsername" layoutX="331.0" layoutY="281.0" prefHeight="31.0" prefWidth="217.0" promptText="Nom d'utilisateur" />
+      <TextField fx:id="tfEmail" layoutX="331.0" layoutY="352.0" prefHeight="31.0" prefWidth="217.0" promptText="Adresse Email" />
+      <Button fx:id="registerButton" layoutX="122.0" layoutY="734.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="435.0" style="-fx-background-color: #63a50a;" text="Creer un compte">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="pfPw" layoutX="331.0" layoutY="424.0" prefHeight="31.0" prefWidth="217.0" />
+      <Label layoutX="48.0" layoutY="153.0" text="Créez votre compte">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="223.0" text="Vous avez deja un compte?">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="CnxLabel" layoutX="265.0" layoutY="223.0" onMouseClicked="#CnxClick" prefHeight="21.0" prefWidth="216.0" text="Connectez-vous " textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="MailLabel" layoutX="332.0" layoutY="390.0" prefHeight="21.0" prefWidth="216.0" textFill="RED" />
+      <Label fx:id="UserLabel" layoutX="332.0" layoutY="319.0" prefHeight="21.0" prefWidth="216.0" textFill="RED" />
+      <Label fx:id="PwLabel" layoutX="329.0" layoutY="463.0" prefHeight="21.0" prefWidth="216.0" textFill="RED" />
+      <Label layoutX="122.0" layoutY="496.0" text="Nom" />
+      <TextField fx:id="tfNom" layoutX="333.0" layoutY="491.0" prefHeight="31.0" prefWidth="217.0" promptText="Nom" />
+      <Label layoutX="121.0" layoutY="557.0" text="Numero telephone" />
+      <TextField fx:id="tfNum" layoutX="332.0" layoutY="552.0" prefHeight="31.0" prefWidth="217.0" promptText="Numero" />
+      <Label layoutX="122.0" layoutY="614.0" text="Age" />
+      <TextField fx:id="tfAge" layoutX="333.0" layoutY="609.0" prefHeight="31.0" prefWidth="217.0" promptText="Age" />
+      <ComboBox fx:id="Sexe" layoutX="333.0" layoutY="669.0" prefHeight="31.0" prefWidth="216.0" promptText="Sexe" />
+   </children>
+</AnchorPane>
